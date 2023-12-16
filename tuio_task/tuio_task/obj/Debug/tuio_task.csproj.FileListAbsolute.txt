@@ -1,0 +1,14 @@
+D:\tuio_task\tuio_task\bin\Debug\tuio_task.exe.config
+D:\tuio_task\tuio_task\bin\Debug\tuio_task.exe
+D:\tuio_task\tuio_task\bin\Debug\tuio_task.pdb
+D:\tuio_task\tuio_task\obj\Debug\tuio_task.csprojAssemblyReference.cache
+D:\tuio_task\tuio_task\obj\Debug\tuio_task.Properties.Resources.resources
+D:\tuio_task\tuio_task\obj\Debug\tuio_task.csproj.GenerateResource.cache
+D:\tuio_task\tuio_task\obj\Debug\tuio_task.csproj.CoreCompileInputs.cache
+D:\tuio_task\tuio_task\obj\Debug\tuio_task.exe
+D:\tuio_task\tuio_task\obj\Debug\tuio_task.pdb
+D:\tuio_task\tuio_task\obj\Debug\tuio_task.Form1.resources
+D:\tuio_task\tuio_task\obj\Debug\tuio_task.Form2.resources
+D:\tuio_task\tuio_task\obj\Debug\tuio_task.Form3.resources
+D:\tuio_task\tuio_task\obj\Debug\tuio_task.Form4.resources
+D:\tuio_task\tuio_task\obj\Debug\tuio_task.Form5.resources
