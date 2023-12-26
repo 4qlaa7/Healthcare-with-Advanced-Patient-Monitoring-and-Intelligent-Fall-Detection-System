@@ -19,13 +19,6 @@ namespace HCI_Project
 		private Dictionary<long, TuioBlob> blobList;
 		private bool verbose;
 		public static bool isok = false;
-		Font font = new Font("Arial", 10.0f);
-		SolidBrush fntBrush = new SolidBrush(Color.White);
-		SolidBrush bgrBrush = new SolidBrush(Color.FromArgb(0, 0, 64));
-		SolidBrush curBrush = new SolidBrush(Color.FromArgb(192, 0, 192));
-		SolidBrush objBrush = new SolidBrush(Color.FromArgb(64, 0, 0));
-		SolidBrush blbBrush = new SolidBrush(Color.FromArgb(64, 64, 64));
-		Pen curPen = new Pen(new SolidBrush(Color.Blue), 1);
 		public static string text = "unrecognized";
 		public Form2()
         {
@@ -119,6 +112,129 @@ namespace HCI_Project
 		{
 			Invalidate();
 		}
+		void change_angel(bool left, bool right, bool downright, bool downleft)
+		{
+			if (left)
+			{
+				if (Form1.CurrentMouseMode == Form1.Modes.MainMenu)
+				{
+					//openchild(forms[4]);
+					Form1.newform = new Rooms();
+					Form1.CurrentMouseMode = Form1.Modes.Rooms;
+				}
+				if (Form1.CurrentMouseMode == Form1.Modes.SOS|| Form1.CurrentMouseMode == Form1.Modes.History|| Form1.CurrentMouseMode == Form1.Modes.Guide)
+				{
+					Form1.CurrentMouseMode = Form1.Modes.MainMenu;
+
+				}
+			}
+			if (right)
+			{
+				if (Form1.CurrentMouseMode == Form1.Modes.MainMenu)
+				{
+					//openchild(forms[3]);
+					Form1.newform = new SOS();
+					Form1.CurrentMouseMode = Form1.Modes.SOS;
+				}
+
+			}
+			if (downleft)
+			{
+				if (Form1.CurrentMouseMode == Form1.Modes.MainMenu)
+				{
+					//Form1.openchild(new Guide());
+					Form1.newform = new Guide();
+					Form1.CurrentMouseMode = Form1.Modes.History;
+				}
+
+			}
+			if (downright)
+			{
+				if (Form1.CurrentMouseMode == Form1.Modes.MainMenu)
+				{
+
+					//Form1.openchild(new History());
+					Form1.newform = new History();
+					Form1.CurrentMouseMode = Form1.Modes.Guide;
+				}
+
+			}
+
+
+		}
+		public void isrotate(float angel)
+		{
+			Console.WriteLine(angel);
+			//normal angel
+			if (angel < 1)
+			{
+				Form1.ctor = 0;
+				Form1.left = false;
+				Form1.right = false;
+				Form1.downright = false;
+				Form1.downleft = false;
+			}
+
+			//left angel
+			if (angel >= 4)
+			{
+				Form1.left = true;
+				Form1.right = false;
+				Form1.downleft = false;
+				Form1.downright = false;
+				if (Form1.ctor > 40)
+				{
+					change_angel(Form1.left, Form1.right, Form1.downright, Form1.downleft);
+					Form1.ctor = 0;
+				}
+				Form1.ctor++;
+			}
+			//down left angel
+			if (angel >= 3 && angel < 4)
+			{
+				Form1.left = false;
+				Form1.right = false;
+				Form1.downleft = true;
+				Form1.downright = false;
+				if (Form1.ctor > 40)
+				{
+					change_angel(Form1.left, Form1.right, Form1.downright, Form1.downleft);
+					Form1.ctor = 0;
+				}
+				Form1.ctor++;
+			}
+
+			//right angel
+			if (angel >= 1 && angel < 2)
+			{
+				Form1.right = true;
+				Form1.left = false;
+				Form1.downleft = false;
+				Form1.downright = false;
+				if (Form1.ctor > 40)
+				{
+					change_angel(Form1.left, Form1.right, Form1.downright, Form1.downleft);
+					Form1.ctor = 0;
+				}
+				Form1.ctor++;
+			}
+			//down right angel
+			if (angel >= 2 && angel < 3)
+			{
+
+				Form1.right = false;
+				Form1.left = false;
+				Form1.downleft = false;
+				Form1.downright = true;
+				if (Form1.ctor > 40)
+				{
+					change_angel(Form1.left, Form1.right, Form1.downright, Form1.downleft);
+					Form1.ctor = 0;
+				}
+				Form1.ctor++;
+			}
+
+		}
 		protected override void OnPaintBackground(PaintEventArgs pevent)
 		{
 			
@@ -127,25 +243,9 @@ namespace HCI_Project
 				lock (objectList)
 				{
 					foreach (TuioObject tobj in objectList.Values)
-					{						
-						if (tobj.SymbolID == 15)
-						{
-							text = "you are in bedroom1";
-						}
-						if (tobj.SymbolID == 12)
-						{
-							text = "you are in bathroom";
-						}
-						if (tobj.SymbolID == 13)
-						{
-							text = "you are in Kitchen";
-						}
-						if (tobj.SymbolID == 14)
-						{
-							text = "you are in LivingRoom";
-						}
-						Console.WriteLine("mewooo "+ tobj.SymbolID);
+					{
 
+						isrotate(tobj.Angle);
 					}
 				}
 			}			

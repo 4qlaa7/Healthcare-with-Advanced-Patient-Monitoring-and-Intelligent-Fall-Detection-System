@@ -34,7 +34,7 @@ print('Encoding Complete.')
 
 def takeframe():
     framect = 0
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(1)
     while cap.isOpened:
         ret, frame = cap.read()
         framect +=1
