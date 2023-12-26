@@ -41,14 +41,17 @@ namespace HCI_Project
 
         private void Timer_Tick(object sender, EventArgs e)
         {
+            string face = "0,GAZE";
+            Conn.send(face);
+            Conn.recieveMessage();
 
-            if (facedone == false && Conn.FaceID())
+            if (facedone == true)
             {
                 
                 facedone = true;
                 formm = new Form1(Conn);
                 this.Hide();
-                if (Conn.whoperson() == "AYMAN")
+                if (Conn.whoperson() == "AHMED")
                 {
                     this.Text = "AYMAN";
                     formm.ShowDialog();

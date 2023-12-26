@@ -48,7 +48,7 @@ def takeframe():
 def who(face):
     #face = "D:/EDU/MSA/CS 484 HCI/Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio/Persons/sherif.jpg"
     cap = cv2.imwrite('face.jpg', face)
-    cap = cv2.imread(cap)
+    cap = cv2.imread('face.jpg')
     
     imgS = cv2.resize(cap, (0,0), None, 0.25, 0.25)
     imgS = cv2.cvtColor(imgS, cv2.COLOR_BGR2RGB)
