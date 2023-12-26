@@ -48,7 +48,7 @@ namespace HCI_Project
                 facedone = true;
                 formm = new Form1(Conn);
                 this.Hide();
-                if (Conn.whoperson() == "AYMAN")
+                if (Conn.whoperson() == "AHMED")
                 {
                     this.Text = "AYMAN";
                     formm.ShowDialog();
