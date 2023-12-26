@@ -17,6 +17,7 @@ namespace HCI_Project
         TcpClient tcpClient;
         String host;
         int portNumber;
+        public string personwho;
 
         public Client_Connection(String Host= "localhost", int PortNum= 4344)
         {
@@ -95,8 +96,11 @@ namespace HCI_Project
                 string dataa = Encoding.UTF8.GetString(receiveBuffer, 0, bytesReceived);
                 string[] points = dataa.Split(',');
                 Console.WriteLine(dataa.ToString());
-                if (Array.Exists(points, element => element == "FACEID"))
+                Console.WriteLine(points.ToString());
+                if (Array.Exists(points, element => element == "FACEID") && Array.Exists(points, element => element == "True"))
                 {
+                    Console.WriteLine(points[2].ToString());
+                    personwho = points[2];
                     return true;
                 }
                 else
@@ -110,6 +114,10 @@ namespace HCI_Project
                 Console.WriteLine("Connection not initialized : " + e);
                 return false;
             }
+        }
+        public string whoperson()
+        {
+            return personwho;
         }
         public bool recieveMessage()
         {

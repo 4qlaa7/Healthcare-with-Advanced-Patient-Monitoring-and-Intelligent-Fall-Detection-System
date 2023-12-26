@@ -13,20 +13,28 @@ namespace HCI_Project
     public partial class LoginPage : Form
     {
         public static Client_Connection Conn = new Client_Connection();
+        Form1 formm;
         bool facedone = false;
         Timer timer = new Timer();
         public LoginPage()
         {
             InitializeComponent();
+            this.FormClosed += LoginPage_FormClosed;
+        }
+
+        private void LoginPage_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            formm.Close();
         }
 
         private void LoginPage_Load(object sender, EventArgs e)
         {
+            
             Conn.connectToSocket();
             timer.Tick += Timer_Tick;
             timer.Start();
 
-            string face = ",FACEID";
+            string face = "0,FACEID";
             Conn.send(face);
 
         }
@@ -36,11 +44,16 @@ namespace HCI_Project
 
             if (facedone == false && Conn.FaceID())
             {
-                this.Text = "True";
+                
                 facedone = true;
-                Form1 form = new Form1(Conn);
+                formm = new Form1(Conn);
                 this.Hide();
-                form.ShowDialog();
+                if (Conn.whoperson() == "AYMAN")
+                {
+                    this.Text = "AYMAN";
+                    formm.ShowDialog();
+
+                }
                 
                 
             }
