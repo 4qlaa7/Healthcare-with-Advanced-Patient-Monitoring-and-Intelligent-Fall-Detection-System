@@ -1,6 +1,7 @@
 import socket
 import threading
-from FaceID import who 
+import cv2
+from FaceID import who,takeframe
 
 mySocket = socket.socket()
 mySocket.bind(('localhost', 4344))
@@ -28,14 +29,14 @@ def listen(conn):
         data = conn.recv(1024).decode('utf-8')
         if not data:
             break
-
-        _, message = data.split(",", 1)
+        _, message = data.split(",",1)
         print(message)
         if message == "FACEID":
-            file_path = "D:/EDU/MSA/CS 484 HCI/Project/Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System/Senario one with Tuio/Persons/ayman.jpg"
-            #face = who(file_path)
+            face = takeframe()
+            #face = cv2.imread("face.jpg")
+            boool,recognize = who(face)
             #print("Face:", face)
-            d = "FACEID,True"
+            d = f'FACEID,{boool},{recognize}'
             print(d)
             d = bytes(d, 'utf-8')
             conn.send(d)

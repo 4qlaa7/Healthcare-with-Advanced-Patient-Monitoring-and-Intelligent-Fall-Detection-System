@@ -4,7 +4,7 @@ import face_recognition
 import os
 
 
-path = 'D:/EDU/MSA/CS 484 HCI/Project/Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System/Senario one with Tuio/Persons'  # put the path
+path = 'Persons'  # put the path
 images = []
 classNames = []
 personsList = os.listdir(path)
@@ -32,6 +32,17 @@ encodeListKnown = findEncodeings(images)
 print('Encoding Complete.')
 
 
+def takeframe():
+    framect = 0
+    cap = cv2.VideoCapture(0)
+    while cap.isOpened:
+        ret, frame = cap.read()
+        framect +=1
+        if ret and framect == 3:
+            return frame
+
+
+
 # This Function Takes ndarray OK !!!! 
 
 def who(face):
@@ -54,6 +65,6 @@ def who(face):
             reconame = classNames[matchIndex].upper()
             print(reconame)
             break
-    return reconame
+    return "True",reconame
 
 
