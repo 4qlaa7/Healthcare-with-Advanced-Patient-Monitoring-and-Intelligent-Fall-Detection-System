@@ -2,6 +2,7 @@ import socket
 import threading
 import cv2
 from FaceID import who,takeframe
+from Eye_Gaze_Tracking import eyegaze
 
 mySocket = socket.socket()
 mySocket.bind(('localhost', 4344))
@@ -40,6 +41,17 @@ def listen(conn):
             print(d)
             d = bytes(d, 'utf-8')
             conn.send(d)
+        
+        if message == "GAZE":
+            webcam = cv2.VideoCapture(0)
+            while webcam.isOpened:
+                pos = eyegaze(webcam)
+                print(pos)
+                d = f'GAZE,{pos}'
+                #print(d)
+                d = bytes(d, 'utf-8')
+                conn.send(d)
+            print("sss")
 
 # Start the connector thread
 thread1 = threading.Thread(target=connector)

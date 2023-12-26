@@ -41,8 +41,11 @@ namespace HCI_Project
 
         private void Timer_Tick(object sender, EventArgs e)
         {
+            string face = "0,GAZE";
+            Conn.send(face);
+            Conn.recieveMessage();
 
-            if (facedone == false && Conn.FaceID())
+            if (facedone == true)
             {
                 
                 facedone = true;
