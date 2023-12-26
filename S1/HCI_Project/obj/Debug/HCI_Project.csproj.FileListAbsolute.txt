@@ -1,0 +1,205 @@
+D:\MSA\HCI\HCI_Project\bin\Debug\HCI_Project.exe.config
+D:\MSA\HCI\HCI_Project\bin\Debug\HCI_Project.exe
+D:\MSA\HCI\HCI_Project\bin\Debug\HCI_Project.pdb
+D:\MSA\HCI\HCI_Project\obj\Debug\HCI_Project.csprojAssemblyReference.cache
+D:\MSA\HCI\HCI_Project\obj\Debug\HCI_Project.Form1.resources
+D:\MSA\HCI\HCI_Project\obj\Debug\HCI_Project.Properties.Resources.resources
+D:\MSA\HCI\HCI_Project\obj\Debug\HCI_Project.csproj.GenerateResource.cache
+D:\MSA\HCI\HCI_Project\obj\Debug\HCI_Project.csproj.CoreCompileInputs.cache
+D:\MSA\HCI\HCI_Project\obj\Debug\HCI_Project.exe
+D:\MSA\HCI\HCI_Project\obj\Debug\HCI_Project.pdb
+D:\MSA\HCI\HCI_Project\obj\Debug\HCI_Project.HomePage.resources
+E:\MSA\HCI\HCI_Project\obj\Debug\HCI_Project.csproj.AssemblyReference.cache
+E:\MSA\HCI\HCI_Project\obj\Debug\HCI_Project.Form1.resources
+E:\MSA\HCI\HCI_Project\obj\Debug\HCI_Project.HomePage.resources
+E:\MSA\HCI\HCI_Project\obj\Debug\HCI_Project.Properties.Resources.resources
+E:\MSA\HCI\HCI_Project\obj\Debug\HCI_Project.csproj.GenerateResource.cache
+E:\MSA\HCI\HCI_Project\obj\Debug\HCI_Project.csproj.CoreCompileInputs.cache
+E:\MSA\HCI\HCI_Project\obj\Debug\HCI_Project.exe
+E:\MSA\HCI\HCI_Project\obj\Debug\HCI_Project.pdb
+E:\MSA\HCI\HCI_Project\bin\Debug\HCI_Project.exe.config
+E:\MSA\HCI\HCI_Project\bin\Debug\HCI_Project.exe
+E:\MSA\HCI\HCI_Project\bin\Debug\HCI_Project.pdb
+C:\Users\ahmed\Downloads\HCI_Project\bin\Debug\HCI_Project.exe.config
+C:\Users\ahmed\Downloads\HCI_Project\bin\Debug\HCI_Project.exe
+C:\Users\ahmed\Downloads\HCI_Project\bin\Debug\HCI_Project.pdb
+C:\Users\ahmed\Downloads\HCI_Project\obj\Debug\HCI_Project.csprojAssemblyReference.cache
+C:\Users\ahmed\Downloads\HCI_Project\obj\Debug\HCI_Project.Form1.resources
+C:\Users\ahmed\Downloads\HCI_Project\obj\Debug\HCI_Project.HomePage.resources
+C:\Users\ahmed\Downloads\HCI_Project\obj\Debug\HCI_Project.Properties.Resources.resources
+C:\Users\ahmed\Downloads\HCI_Project\obj\Debug\HCI_Project.csproj.GenerateResource.cache
+C:\Users\ahmed\Downloads\HCI_Project\obj\Debug\HCI_Project.csproj.CoreCompileInputs.cache
+C:\Users\ahmed\Downloads\HCI_Project\obj\Debug\HCI_Project.exe
+C:\Users\ahmed\Downloads\HCI_Project\obj\Debug\HCI_Project.pdb
+E:\MSA\HCI\HCI_Project\bin\Debug\Emgu.CV.dll
+E:\MSA\HCI\HCI_Project\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\MSA\HCI\HCI_Project\bin\Debug\System.Buffers.dll
+E:\MSA\HCI\HCI_Project\bin\Debug\System.Memory.dll
+E:\MSA\HCI\HCI_Project\bin\Debug\System.Numerics.Vectors.dll
+E:\MSA\HCI\HCI_Project\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\MSA\HCI\HCI_Project\bin\Debug\System.Text.Encodings.Web.dll
+E:\MSA\HCI\HCI_Project\bin\Debug\System.Text.Json.dll
+E:\MSA\HCI\HCI_Project\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\MSA\HCI\HCI_Project\bin\Debug\System.ValueTuple.dll
+E:\MSA\HCI\HCI_Project\bin\Debug\Emgu.CV.xml
+E:\MSA\HCI\HCI_Project\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\MSA\HCI\HCI_Project\bin\Debug\System.Buffers.xml
+E:\MSA\HCI\HCI_Project\bin\Debug\System.Memory.xml
+E:\MSA\HCI\HCI_Project\bin\Debug\System.Numerics.Vectors.xml
+E:\MSA\HCI\HCI_Project\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\MSA\HCI\HCI_Project\bin\Debug\System.Text.Encodings.Web.xml
+E:\MSA\HCI\HCI_Project\bin\Debug\System.Text.Json.xml
+E:\MSA\HCI\HCI_Project\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\MSA\HCI\HCI_Project\bin\Debug\System.ValueTuple.xml
+E:\MSA\HCI\HCI_Project\obj\Debug\HCI_Project.csproj.CopyComplete
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\HCI_Project.exe.config
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\HCI_Project.exe
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\HCI_Project.pdb
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\Emgu.CV.dll
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\System.Buffers.dll
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\System.Memory.dll
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\System.Numerics.Vectors.dll
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\System.Text.Encodings.Web.dll
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\System.Text.Json.dll
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\System.ValueTuple.dll
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\Emgu.CV.xml
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\System.Buffers.xml
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\System.Memory.xml
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\System.Numerics.Vectors.xml
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\System.Text.Encodings.Web.xml
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\System.Text.Json.xml
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\System.ValueTuple.xml
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\obj\Debug\HCI_Project.csprojAssemblyReference.cache
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\obj\Debug\HCI_Project.Form1.resources
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\obj\Debug\HCI_Project.HomePage.resources
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\obj\Debug\HCI_Project.Properties.Resources.resources
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\obj\Debug\HCI_Project.csproj.GenerateResource.cache
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\obj\Debug\HCI_Project.csproj.CoreCompileInputs.cache
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\obj\Debug\HCI_Project.csproj.CopyComplete
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\obj\Debug\HCI_Project.exe
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\obj\Debug\HCI_Project.pdb
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\obj\Debug\HCI_Project.Rooms.resources
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\OSC.Net.dll
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\OSC.Net.xml
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\obj\Debug\HCI_Project.Form2.resources
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\Microsoft.IdentityModel.Logging.dll
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\Newtonsoft.Json.dll
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\Twilio.dll
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\Newtonsoft.Json.xml
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\Twilio.xml
+D:\HCI_Project\C#\HCI_Project\bin\Debug\HCI_Project.exe.config
+D:\HCI_Project\C#\HCI_Project\bin\Debug\HCI_Project.exe
+D:\HCI_Project\C#\HCI_Project\bin\Debug\HCI_Project.pdb
+D:\HCI_Project\C#\HCI_Project\bin\Debug\Emgu.CV.dll
+D:\HCI_Project\C#\HCI_Project\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\HCI_Project\C#\HCI_Project\bin\Debug\Microsoft.IdentityModel.Logging.dll
+D:\HCI_Project\C#\HCI_Project\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+D:\HCI_Project\C#\HCI_Project\bin\Debug\Newtonsoft.Json.dll
+D:\HCI_Project\C#\HCI_Project\bin\Debug\OSC.Net.dll
+D:\HCI_Project\C#\HCI_Project\bin\Debug\System.Buffers.dll
+D:\HCI_Project\C#\HCI_Project\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+D:\HCI_Project\C#\HCI_Project\bin\Debug\System.Memory.dll
+D:\HCI_Project\C#\HCI_Project\bin\Debug\System.Numerics.Vectors.dll
+D:\HCI_Project\C#\HCI_Project\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\HCI_Project\C#\HCI_Project\bin\Debug\System.Text.Encodings.Web.dll
+D:\HCI_Project\C#\HCI_Project\bin\Debug\System.Text.Json.dll
+D:\HCI_Project\C#\HCI_Project\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\HCI_Project\C#\HCI_Project\bin\Debug\System.ValueTuple.dll
+D:\HCI_Project\C#\HCI_Project\bin\Debug\Twilio.dll
+D:\HCI_Project\C#\HCI_Project\bin\Debug\Emgu.CV.xml
+D:\HCI_Project\C#\HCI_Project\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\HCI_Project\C#\HCI_Project\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+D:\HCI_Project\C#\HCI_Project\bin\Debug\Newtonsoft.Json.xml
+D:\HCI_Project\C#\HCI_Project\bin\Debug\OSC.Net.xml
+D:\HCI_Project\C#\HCI_Project\bin\Debug\System.Buffers.xml
+D:\HCI_Project\C#\HCI_Project\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+D:\HCI_Project\C#\HCI_Project\bin\Debug\System.Memory.xml
+D:\HCI_Project\C#\HCI_Project\bin\Debug\System.Numerics.Vectors.xml
+D:\HCI_Project\C#\HCI_Project\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\HCI_Project\C#\HCI_Project\bin\Debug\System.Text.Encodings.Web.xml
+D:\HCI_Project\C#\HCI_Project\bin\Debug\System.Text.Json.xml
+D:\HCI_Project\C#\HCI_Project\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\HCI_Project\C#\HCI_Project\bin\Debug\System.ValueTuple.xml
+D:\HCI_Project\C#\HCI_Project\bin\Debug\Twilio.xml
+D:\HCI_Project\C#\HCI_Project\obj\Debug\HCI_Project.csprojAssemblyReference.cache
+D:\HCI_Project\C#\HCI_Project\obj\Debug\HCI_Project.Form1.resources
+D:\HCI_Project\C#\HCI_Project\obj\Debug\HCI_Project.Form2.resources
+D:\HCI_Project\C#\HCI_Project\obj\Debug\HCI_Project.HomePage.resources
+D:\HCI_Project\C#\HCI_Project\obj\Debug\HCI_Project.Properties.Resources.resources
+D:\HCI_Project\C#\HCI_Project\obj\Debug\HCI_Project.Rooms.resources
+D:\HCI_Project\C#\HCI_Project\obj\Debug\HCI_Project.csproj.GenerateResource.cache
+D:\HCI_Project\C#\HCI_Project\obj\Debug\HCI_Project.csproj.CoreCompileInputs.cache
+D:\HCI_Project\C#\HCI_Project\obj\Debug\HCI_Project.csproj.CopyComplete
+D:\HCI_Project\C#\HCI_Project\obj\Debug\HCI_Project.exe
+D:\HCI_Project\C#\HCI_Project\obj\Debug\HCI_Project.pdb
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\Interop.WMPLib.dll
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\bin\Debug\AxInterop.WMPLib.dll
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\obj\Debug\Interop.WMPLib.dll
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\obj\Debug\AxInterop.WMPLib.dll
+D:\MSA\HCI\GitHub\HCI_Project\C#\HCI_Project\obj\Debug\HCI_Project.csproj.ResolveComReference.cache
+D:\HCI_Project\C#\HCI_Project\bin\Debug\Interop.WMPLib.dll
+D:\HCI_Project\C#\HCI_Project\bin\Debug\AxInterop.WMPLib.dll
+D:\HCI_Project\C#\HCI_Project\obj\Debug\Interop.WMPLib.dll
+D:\HCI_Project\C#\HCI_Project\obj\Debug\AxInterop.WMPLib.dll
+D:\HCI_Project\C#\HCI_Project\obj\Debug\HCI_Project.csproj.ResolveComReference.cache
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\HCI_Project.exe.config
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\HCI_Project.exe
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\HCI_Project.pdb
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\Emgu.CV.dll
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\Microsoft.IdentityModel.Logging.dll
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\Newtonsoft.Json.dll
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\OSC.Net.dll
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\System.Buffers.dll
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\System.Memory.dll
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\System.Numerics.Vectors.dll
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\System.Text.Encodings.Web.dll
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\System.Text.Json.dll
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\System.ValueTuple.dll
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\Twilio.dll
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\Emgu.CV.xml
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\Newtonsoft.Json.xml
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\OSC.Net.xml
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\System.Buffers.xml
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\System.Memory.xml
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\System.Numerics.Vectors.xml
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\System.Text.Encodings.Web.xml
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\System.Text.Json.xml
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\System.ValueTuple.xml
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\Twilio.xml
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\Interop.WMPLib.dll
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\bin\Debug\AxInterop.WMPLib.dll
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\obj\Debug\HCI_Project.csproj.AssemblyReference.cache
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\obj\Debug\Interop.WMPLib.dll
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\obj\Debug\AxInterop.WMPLib.dll
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\obj\Debug\HCI_Project.csproj.ResolveComReference.cache
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\obj\Debug\HCI_Project.Form1.resources
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\obj\Debug\HCI_Project.Form2.resources
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\obj\Debug\HCI_Project.HomePage.resources
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\obj\Debug\HCI_Project.Properties.Resources.resources
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\obj\Debug\HCI_Project.Rooms.resources
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\obj\Debug\HCI_Project.csproj.GenerateResource.cache
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\obj\Debug\HCI_Project.csproj.CoreCompileInputs.cache
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\obj\Debug\HCI_Project.csproj.CopyComplete
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\obj\Debug\HCI_Project.exe
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\obj\Debug\HCI_Project.pdb
+D:\EDU\MSA\CS 484 HCI\Project\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\Senario one with Tuio\C#\HCI_Project\obj\Debug\HCI_Project.LoginPage.resources

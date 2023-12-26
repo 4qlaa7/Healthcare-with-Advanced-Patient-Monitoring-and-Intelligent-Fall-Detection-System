@@ -1,0 +1,351 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OSC.Net</name>
+    </assembly>
+    <members>
+        <member name="T:OSC.Net.CameraClient">
+            <summary>
+            Standard implementation of <see cref="T:OSC.Net.ICameraClient"/>.
+            </summary>
+        </member>
+        <member name="F:OSC.Net.CameraClient.DefaultIp">
+            <summary>
+            The Default Camera Ip Address.
+            </summary>
+            <value>192.168.42.1</value>
+        </member>
+        <member name="F:OSC.Net.CameraClient.DefaultPort">
+            <summary>
+            The Default Camera Port.
+            </summary>
+            <value>80</value>
+        </member>
+        <member name="F:OSC.Net.CameraClient.DefaultIpEndPoint">
+            <summary>
+            The Default Camera ip end point.
+            </summary>
+            <value>192.168.42.1:80</value>
+        </member>
+        <member name="P:OSC.Net.CameraClient.EndPoint">
+            <inheritdoc />
+        </member>
+        <member name="M:OSC.Net.CameraClient.OSC#Net#ICameraClient#GetHttpClient">
+            <inheritdoc />
+        </member>
+        <member name="M:OSC.Net.CameraClient.OSC#Net#ICameraClient#CreateFile(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:OSC.Net.CameraClient.#ctor(OSC.Net.IO.CreateFileHandler,OSC.Net.Http.HttpClientFactoryHandler)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OSC.Net.CameraClient"/> class using <see cref="F:OSC.Net.CameraClient.DefaultIpEndPoint"/>.
+            </summary>
+            <param name="createFile">Optional handler to override local file creation.</param>
+            <param name="createClient">Optional handler to override http client creation.</param>
+        </member>
+        <member name="M:OSC.Net.CameraClient.#ctor(System.Net.IPEndPoint,OSC.Net.IO.CreateFileHandler,OSC.Net.Http.HttpClientFactoryHandler)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OSC.Net.CameraClient"/> class.
+            </summary>
+            <param name="ipEndPoint">The camera ip address and port.</param>
+            <param name="createFile">Optional handler to override local file creation.</param>
+            <param name="createClient">Optional handler to override http client creation.</param>
+        </member>
+        <member name="M:OSC.Net.CameraClient.#ctor(System.Uri,OSC.Net.IO.CreateFileHandler,OSC.Net.Http.HttpClientFactoryHandler)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OSC.Net.CameraClient"/> class.
+            </summary>
+            <param name="endPoint">The camera http end point.</param>
+            <param name="createFile">Optional handler to override local file creation.</param>
+            <param name="createClient">Optional handler to override http client creation.</param>
+        </member>
+        <member name="T:OSC.Net.Commands">
+            <summary>
+            Contains <see cref="T:OSC.Net.ICameraClient"/> commands extension methods.
+            </summary>
+        </member>
+        <member name="M:OSC.Net.Commands.GetCaptureMode(OSC.Net.ICameraClient)">
+            <summary>
+            Gets camera current capture mode.
+            </summary>
+            <param name="client">The <see cref="T:OSC.Net.ICameraClient"/> method extends.</param>
+            <returns>Current <see cref="T:OSC.Net.Model.CaptureMode"/>.</returns>
+        </member>
+        <member name="M:OSC.Net.Commands.SetCaptureMode(OSC.Net.ICameraClient,OSC.Net.Model.CaptureMode)">
+            <summary>
+            Sets camera capture mode.
+            </summary>
+            <param name="client">The <see cref="T:OSC.Net.ICameraClient"/> method extends.</param>
+            <param name="captureMode">Supported capture modes <see cref="F:OSC.Net.Model.CaptureMode.image"/> and <see cref="F:OSC.Net.Model.CaptureMode.video"/>.</param>
+            <returns></returns>
+        </member>
+        <member name="M:OSC.Net.Commands.GetDateTime(OSC.Net.ICameraClient)">
+            <summary>
+            Gets camera current date and time.
+            </summary>
+            <param name="client">The <see cref="T:OSC.Net.ICameraClient"/> method extends.</param>
+            <returns>Camera current <see cref="T:System.DateTimeOffset"/>, <c>null</c> if failed to parse date.</returns>
+        </member>
+        <member name="M:OSC.Net.Commands.SetDateTime(OSC.Net.ICameraClient,System.DateTimeOffset)">
+            <summary>
+            Sets camera current date and time.
+            </summary>
+            <param name="client">The <see cref="T:OSC.Net.ICameraClient"/> method extends.</param>
+            <param name="dateTime">The <see cref="T:System.DateTimeOffset"/> to set.</param>
+        </member>
+        <member name="M:OSC.Net.Commands.TakePicture(OSC.Net.ICameraClient,System.Boolean)">
+            <summary>
+            Takes picture and returns uri where it can be downloaded.
+            </summary>
+            <param name="client">The <see cref="T:OSC.Net.ICameraClient"/> method extends.</param>
+            <param name="useLocalFileUri">Optional flag for if absolute uri returned from camera should be used or absolute uri created from <see cref="P:OSC.Net.ICameraClient.EndPoint"/> and relative uri, useful if called through a proxy. Default value <c>false</c></param>
+            <returns>Absolute uri to image.</returns>
+        </member>
+        <member name="M:OSC.Net.Commands.TakePicture(OSC.Net.ICameraClient,System.IO.Stream,System.Boolean)">
+            <summary>
+            Takes picture and downloads image to specified stream.
+            </summary>
+            <param name="client">The <see cref="T:OSC.Net.ICameraClient"/> method extends.</param>
+            <param name="targetStream">The target stream image is downloaded to.</param>
+            <param name="useLocalFileUri">Optional flag for if absolute uri returned from camera should be used or absolute uri created from <see cref="P:OSC.Net.ICameraClient.EndPoint"/> and relative uri, useful if called through a proxy. Default value <c>false</c></param>
+        </member>
+        <member name="M:OSC.Net.Commands.TakePicture(OSC.Net.ICameraClient,System.String,System.Boolean)">
+            <summary>
+            Takes picture and downloads image to specified local path.
+            </summary>
+            <param name="client">The <see cref="T:OSC.Net.ICameraClient"/> method extends.</param>
+            <param name="path">The local path to download to.</param>
+            <param name="useLocalFileUri">Optional flag for if absolute uri returned from camera should be used or absolute uri created from <see cref="P:OSC.Net.ICameraClient.EndPoint"/> and relative uri, useful if called through a proxy. Default value <c>false</c></param>
+        </member>
+        <member name="T:OSC.Net.Http.HttpClientFactoryHandler">
+            <summary>
+            Handler used to obtain a new <see cref="T:System.Net.Http.HttpClient" />
+            </summary>
+            <param name="name">The name of the client.</param>
+            <returns><see cref="T:System.Net.Http.HttpClient" /></returns>
+        </member>
+        <member name="T:OSC.Net.ICameraClient">
+            <summary>
+            Represents a Camera Client.
+            </summary>
+        </member>
+        <member name="P:OSC.Net.ICameraClient.EndPoint">
+            <summary>
+            Gets the camera end point.
+            </summary>
+        </member>
+        <member name="M:OSC.Net.ICameraClient.GetHttpClient">
+            <summary>
+            Gets a http client with camera base end point.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OSC.Net.ICameraClient.CreateFile(System.String)">
+            <summary>
+            Creates a new file for given path.
+            </summary>
+            <param name="path">Local path.</param>
+            <returns><see cref="T:System.IO.Stream"/> to file.</returns>
+        </member>
+        <member name="T:OSC.Net.IO.CreateFileHandler">
+            <summary>
+            Handler used to override file creation.
+            </summary>
+            <param name="path">Local file path.</param>
+            <returns>Stream to file.</returns>
+        </member>
+        <member name="T:OSC.Net.Model.CaptureMode">
+            <summary>
+            Camera image capture modes enumeration.
+            </summary>
+        </member>
+        <member name="F:OSC.Net.Model.CaptureMode.image">
+            <summary>
+            Still image mode.
+            </summary>
+        </member>
+        <member name="F:OSC.Net.Model.CaptureMode.video">
+            <summary>
+            Video mode.
+            </summary>
+        </member>
+        <member name="F:OSC.Net.Model.CaptureMode._other">
+            <summary>
+            Other (usually standby)
+            </summary>
+        </member>
+        <member name="F:OSC.Net.Model.CaptureMode.unknown">
+            <summary>
+            Unknown mode.
+            </summary>
+        </member>
+        <member name="T:OSC.Net.Model.Error">
+            <summary>
+            Command error class.
+            </summary>
+        </member>
+        <member name="P:OSC.Net.Model.Error.code">
+            <summary>
+            Gets or sets the error code.
+            </summary>
+        </member>
+        <member name="P:OSC.Net.Model.Error.message">
+            <summary>
+            Gets or sets the error message.
+            </summary>
+        </member>
+        <member name="T:OSC.Net.Model.GetCaptureMode.Options">
+            <summary>
+            Get capture mode class.
+            </summary>
+        </member>
+        <member name="P:OSC.Net.Model.GetCaptureMode.Options.captureMode">
+            <summary>
+            Gets or sets the captureMode.
+            </summary>
+        </member>
+        <member name="T:OSC.Net.Model.GetDateTime.Options">
+            <summary>
+            GetDateTime command options class.
+            </summary>
+        </member>
+        <member name="P:OSC.Net.Model.GetDateTime.Options.dateTimeZone">
+            <summary>
+            Gets or sets dateTimeZone.
+            </summary>
+        </member>
+        <member name="T:OSC.Net.Model.GetOptions.Result`1">
+            <summary>
+            Get options result class.
+            </summary>
+            <typeparam name="T">The <see cref="T:OSC.Net.Model.GetOptions.Results`1"/> options type.</typeparam>
+        </member>
+        <member name="P:OSC.Net.Model.GetOptions.Result`1.name">
+            <summary>
+            Gets or sets the command name.
+            </summary>
+        </member>
+        <member name="P:OSC.Net.Model.GetOptions.Result`1.state">
+            <summary>
+            Gets or sets the state of command execution.
+            </summary>
+        </member>
+        <member name="P:OSC.Net.Model.GetOptions.Result`1.results">
+            <summary>
+            Gets or sets the results from command execution.
+            </summary>
+        </member>
+        <member name="T:OSC.Net.Model.GetOptions.Results`1">
+            <summary>
+            Get Options Results class.
+            </summary>
+        </member>
+        <member name="P:OSC.Net.Model.GetOptions.Results`1.options">
+            <summary>
+            Options returned.
+            </summary>
+        </member>
+        <member name="T:OSC.Net.Model.SetOptions.Result">
+            <summary>
+            Set option result class.
+            </summary>
+        </member>
+        <member name="P:OSC.Net.Model.SetOptions.Result.name">
+            <summary>
+            Gets or sets the command name.
+            </summary>
+        </member>
+        <member name="P:OSC.Net.Model.SetOptions.Result.state">
+            <summary>
+            Gets or sets the state of command execution.
+            </summary>
+        </member>
+        <member name="P:OSC.Net.Model.SetOptions.Result.error">
+            <summary>
+            Gets or sets the error as result of command execution.
+            </summary>
+        </member>
+        <member name="T:OSC.Net.Model.TakePicture.Progress">
+            <summary>
+            Take picture progress class.
+            </summary>
+        </member>
+        <member name="P:OSC.Net.Model.TakePicture.Progress.completion">
+            <summary>
+            Gets or sets current progress.
+            </summary>
+        </member>
+        <member name="T:OSC.Net.Model.TakePicture.Result">
+            <summary>
+            Take picture result class.
+            </summary>
+        </member>
+        <member name="P:OSC.Net.Model.TakePicture.Result.name">
+            <summary>
+            Gets or sets the command name.
+            </summary>
+        </member>
+        <member name="P:OSC.Net.Model.TakePicture.Result.state">
+            <summary>
+            Gets or sets the state of command execution.
+            </summary>
+        </member>
+        <member name="P:OSC.Net.Model.TakePicture.Result.id">
+            <summary>
+            Gets or sets the command id.
+            </summary>
+        </member>
+        <member name="P:OSC.Net.Model.TakePicture.Result.progress">
+            <summary>
+            Gets or sets command progress.
+            </summary>
+        </member>
+        <member name="T:OSC.Net.Model.TakePicture.Status.Result">
+            <summary>
+            Take picture status class.
+            </summary>
+        </member>
+        <member name="P:OSC.Net.Model.TakePicture.Status.Result.name">
+            <summary>
+            Gets or sets the command name.
+            </summary>
+        </member>
+        <member name="P:OSC.Net.Model.TakePicture.Status.Result.state">
+            <summary>
+            Gets or sets the state of command execution.
+            </summary>
+        </member>
+        <member name="P:OSC.Net.Model.TakePicture.Status.Result.progress">
+            <summary>
+            Gets or sets command progress.
+            </summary>
+        </member>
+        <member name="P:OSC.Net.Model.TakePicture.Status.Result.results">
+            <summary>
+            Gets or sets results of command.
+            </summary>
+        </member>
+        <member name="T:OSC.Net.Model.TakePicture.Status.Results">
+            <summary>
+            Take Picture Results class.
+            </summary>
+        </member>
+        <member name="P:OSC.Net.Model.TakePicture.Status.Results.fileUrl">
+            <summary>
+            Gets or sets absolute uri to image.
+            </summary>
+        </member>
+        <member name="P:OSC.Net.Model.TakePicture.Status.Results._localFileUrl">
+            <summary>
+            Gets or sets relative uri to image.
+            </summary>
+        </member>
+        <member name="M:LitJson.JsonData.ContainsKey(System.String)">
+            <summary>
+            Determines whether the json contains an element that has the specified key.
+            </summary>
+            <param name="key">The key to locate in the json.</param>
+            <returns>true if the json contains an element that has the specified key; otherwise, false.</returns>
+        </member>
+    </members>
+</doc>
