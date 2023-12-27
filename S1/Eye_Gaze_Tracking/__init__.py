@@ -1,12 +1,17 @@
 
-
+import csv
 import cv2
 import time
 import pickle
 from Eye_Gaze_Tracking.gaze_tracking import GazeTracking
 
 
-
+gaze = GazeTracking()
+csv_filename = 'gaze_tracking_coordinates.csv'
+csv_header = [ 'X', 'Y']
+with open(csv_filename, mode='w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow(csv_header)
 
 def eyegaze(webcam):
     start_time = time.time()
@@ -44,7 +49,10 @@ def eyegaze(webcam):
                 current_duration = time.time() - start_time
                 current_position = gaze.pupil_left_coords() if gaze.pupil_left_coords() else gaze.pupil_right_coords()
 
-                
+            with open(csv_filename, mode='a', newline='') as file:
+                    writer = csv.writer(file)
+                    writer.writerow([time.time(), current_position[0], current_position[1]])
+     
             if current_duration > max_duration:
                 max_duration = current_duration
                 max_direction = text
