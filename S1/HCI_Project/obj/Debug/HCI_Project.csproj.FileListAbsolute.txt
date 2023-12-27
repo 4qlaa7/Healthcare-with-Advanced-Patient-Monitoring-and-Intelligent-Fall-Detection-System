@@ -356,3 +356,4 @@ D:\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-Sy
 D:\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\S1\HCI_Project\obj\Debug\HCI_Project.csproj.CopyComplete
 D:\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\S1\HCI_Project\obj\Debug\HCI_Project.exe
 D:\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\S1\HCI_Project\obj\Debug\HCI_Project.pdb
+D:\Healthcare-with-Advanced-Patient-Monitoring-and-Intelligent-Fall-Detection-System\S1\HCI_Project\obj\Debug\HCI_Project.Guide.resources

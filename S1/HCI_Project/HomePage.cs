@@ -15,15 +15,18 @@ namespace HCI_Project
 {
     public partial class HomePage : Form
     {
-        
+
         Timer t = new Timer();
+        public static string mess = "All Clear";
+        public static string code_mess = "Code";
+        public static string img_path = "GreenSafe.png";
         public HomePage()
         {
             InitializeComponent();
             t.Tick += T_Tick;
             this.Load += HomePage_Load;
             t.Start();
-            this.KeyDown += HomePage_KeyDown;            
+            this.KeyDown += HomePage_KeyDown;
         }
 
         private void HomePage_KeyDown(object sender, KeyEventArgs e)
@@ -35,10 +38,17 @@ namespace HCI_Project
         {
             //alert();
         }
-
+        string img = "GreenSafe.png";
         private void T_Tick(object sender, EventArgs e)
         {
-            //alert();
+            this.label1.Text = mess;
+            this.label2.Text = code_mess;
+            if (img != img_path)
+            {
+                this.Sign.BackgroundImage = new Bitmap(img_path);
+                img = img_path;
+            }
+
         }
 
         void alert()

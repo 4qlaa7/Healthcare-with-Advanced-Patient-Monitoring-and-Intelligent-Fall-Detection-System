@@ -22,16 +22,16 @@ namespace HCI_Project
         Bitmap off;
         Timer t = new Timer();
         Microphone Mic = new Microphone();
-        bool micisopened=false;
+        bool micisopened = false;
         private SoundPlayer clicksound;
         private SoundPlayer switchmic;
         int savevalue = 0;
         Process pp;
         Form f = new Form2();
-        public enum Modes { MainMenu, Rooms, SOS, Guide, History };        
+        public enum Modes { MainMenu, Rooms, SOS, Patient, History };
         public static Modes CurrentMouseMode = Modes.MainMenu;
         public static bool right = false, left = false, downright = false, downleft = false;
-        public static int ctor=0;
+        public static int ctor = 0;
         public Form1(Client_Connection con)
         {
             Conn = con;
@@ -44,8 +44,8 @@ namespace HCI_Project
             t.Interval = 500;
             newform = new HomePage();
             activeform = new HomePage();
-            openchild(newform);            
-            clicksound = new SoundPlayer("clicking.wav"); 
+            openchild(newform);
+            clicksound = new SoundPlayer("clicking.wav");
             switchmic = new SoundPlayer("openmic.wav");
             //Conn.connectToSocket();
             this.FormClosed += Form1_FormClosed;
@@ -125,10 +125,11 @@ namespace HCI_Project
                     g2.FillEllipse(b, 300, 200, 50, 50);
                 }
             }
-            if (CurrentMouseMode == Modes.Guide)
+            if (CurrentMouseMode == Modes.Patient)
             {
                 g2.DrawString("back", new Font("Arial", 12), Brushes.Black, 100, 175);
                 g2.DrawString("add", new Font("Arial", 12), Brushes.Black, 300, 175);
+                g2.DrawString("Use Marker 53 To move bettwen Patients", new Font("Arial", 12), Brushes.Black, 300, 500);
                 if (left)
                 {
 
@@ -181,21 +182,21 @@ namespace HCI_Project
         {
             pp.Kill();
             Conn.closeConnection();
-            
+
         }
 
         private void T_Tick(object sender, EventArgs e)
         {
-            if (newform!=activeform)
+            if (newform != activeform)
             {
-                openchild(newform);                
+                openchild(newform);
             }
             //HomeBtn.BackColor = Color.White;
             //RoomsBtn.BackColor = Color.White;
             //Guide.BackColor = Color.White;
             //SOSBtn.BackColor = Color.White;
             //HistoryBtn.BackColor = Color.White;
-            if (savevalue!= Mic.value)
+            if (savevalue != Mic.value)
             {
                 changeForm();
                 savevalue = Mic.value;
@@ -222,7 +223,7 @@ namespace HCI_Project
             childform.Dock = DockStyle.Fill;
             this.panel2.Controls.Add(childform);
             this.panel2.Tag = childform;
-            
+
             childform.BringToFront();
             childform.Show();
         }
@@ -232,7 +233,7 @@ namespace HCI_Project
             clicksound.Play();
             switch (Mic.value)
             {
-                case 0:                    
+                case 0:
                     //HomeBtn.PerformClick();
                     break;
                 case 1:
@@ -253,13 +254,13 @@ namespace HCI_Project
             }
         }
 
-       
+
         public void changebtnscolor(Button B)
         {
             B.BackColor = Color.MediumSeaGreen;
         }
-        
-        
+
+
         private void HomeBtn_Click(object sender, EventArgs e)
         {
             clicksound.Play();
@@ -270,7 +271,7 @@ namespace HCI_Project
         {
             //changebtnscolor(RoomsBtn);
             clicksound.Play();
-            openchild(new Rooms()); 
+            openchild(new Rooms());
         }
 
         private void SOSBtn_Click(object sender, EventArgs e)

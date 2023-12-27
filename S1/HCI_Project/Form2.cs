@@ -11,8 +11,8 @@ using TUIO;
 
 namespace HCI_Project
 {
-    public partial class Form2 : Form, TuioListener
-    {
+	public partial class Form2 : Form, TuioListener
+	{
 		private TuioClient client;
 		private Dictionary<long, TuioObject> objectList;
 		private Dictionary<long, TuioCursor> cursorList;
@@ -21,8 +21,8 @@ namespace HCI_Project
 		public static bool isok = false;
 		public static string text = "unrecognized";
 		public Form2()
-        {
-            InitializeComponent();
+		{
+			InitializeComponent();
 			verbose = false;
 			this.SetStyle(ControlStyles.AllPaintingInWmPaint |
 							ControlStyles.UserPaint |
@@ -35,7 +35,7 @@ namespace HCI_Project
 			client.connect();
 			isok = true;
 
-			
+
 		}
 		public void addTuioObject(TuioObject o)
 		{
@@ -119,10 +119,10 @@ namespace HCI_Project
 				if (Form1.CurrentMouseMode == Form1.Modes.MainMenu)
 				{
 					//openchild(forms[4]);
-					Form1.newform = new Rooms();
-					Form1.CurrentMouseMode = Form1.Modes.Rooms;
+					//Form1.newform = new Rooms();
+					//Form1.CurrentMouseMode = Form1.Modes.Rooms;
 				}
-				if (Form1.CurrentMouseMode == Form1.Modes.SOS|| Form1.CurrentMouseMode == Form1.Modes.History|| Form1.CurrentMouseMode == Form1.Modes.Guide)
+				if (Form1.CurrentMouseMode == Form1.Modes.SOS || Form1.CurrentMouseMode == Form1.Modes.History || Form1.CurrentMouseMode == Form1.Modes.Patient)
 				{
 					Form1.CurrentMouseMode = Form1.Modes.MainMenu;
 
@@ -155,16 +155,42 @@ namespace HCI_Project
 
 					//Form1.openchild(new History());
 					Form1.newform = new History();
-					Form1.CurrentMouseMode = Form1.Modes.Guide;
+					Form1.CurrentMouseMode = Form1.Modes.Patient;
 				}
 
 			}
 
 
 		}
+		public void pat_rotate(float angel)
+		{
+			//Left
+			if (angel >= 4.5)
+			{
+				Guide.prev = true;
+				Guide.next = false;
+				Guide.index++;
+
+			}
+			//right
+			if (angel >= 1 && angel < 2)
+			{
+				Guide.prev = false;
+				Guide.next = true;
+				Guide.index++;
+			}
+			//normal
+			if (angel < 1)
+			{
+				Console.WriteLine("normal" + angel);
+				Guide.prev = false;
+				Guide.next = false;
+				Guide.index = 0;
+			}
+		}
 		public void isrotate(float angel)
 		{
-			Console.WriteLine(angel);
+			//Console.WriteLine(angel);
 			//normal angel
 			if (angel < 1)
 			{
@@ -176,7 +202,7 @@ namespace HCI_Project
 			}
 
 			//left angel
-			if (angel >= 4)
+			if (angel >= 4.5)
 			{
 				Form1.left = true;
 				Form1.right = false;
@@ -237,18 +263,81 @@ namespace HCI_Project
 		}
 		protected override void OnPaintBackground(PaintEventArgs pevent)
 		{
-			
+			bool isok53 = false;
+			bool isok52 = false;
+			int allmed = 0;
+			List<string> med_id_mess = new List<string>();
+			List<string> Ll = new List<string>();
+			TextFileHandler pnn = new TextFileHandler("medicen.txt");
+			Ll = pnn.ReadFile();
 			if (objectList.Count > 0)
 			{
 				lock (objectList)
 				{
 					foreach (TuioObject tobj in objectList.Values)
 					{
+						if (tobj.SymbolID != 53 && tobj.SymbolID != 52)
+						{
+							for (int i = 0; i < Ll.Count; i++)
+							{
+								string[] parts = Ll[i].Split(',');
+								if (int.Parse(parts[2]) == tobj.SymbolID)
+								{
+									allmed++;
+								}
+								else
+								{
+									med_id_mess.Add(parts[0]);
+								}
+							}
+							//Console.WriteLine(allmed+"l "+ Ll.Count);
+							if (allmed != Ll.Count)
+							{
+								HomePage.mess = "Denger";
+								HomePage.code_mess = "";
+								for (int i = 0; i < med_id_mess.Count; i++)
+								{
+									HomePage.code_mess += "med Missing:" + med_id_mess[i] + "\n";
+								}
+								HomePage.img_path = "RedWarning.png";
+							}
+							else
+							{
+								HomePage.mess = "ALL Clear";
+								HomePage.code_mess = "No Med Missing";
+								HomePage.img_path = "GreenSafe.png";
+							}
+							isrotate(tobj.Angle);
+						}
+						else
+						{
+							if (tobj.SymbolID == 53)
+							{
+								pat_rotate(tobj.Angle);
+								isok53 = true;
+							}
+							if (tobj.SymbolID == 52)
+							{
+								isok52 = true;
+								if (isok52 && isok53)
+								{
+									Console.WriteLine("both");
+									Guide.P_enter = true;
+								}
+							}
 
-						isrotate(tobj.Angle);
+						}
+
 					}
 				}
-			}			
+			}
+			else
+			{
+				HomePage.mess = "Denger";
+				HomePage.code_mess = "All med are missing";
+				//
+				HomePage.img_path = "RedWarning.png";
+			}
 		}
 	}
 }
