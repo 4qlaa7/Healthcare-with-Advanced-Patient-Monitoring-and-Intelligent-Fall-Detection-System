@@ -4,6 +4,7 @@ import cv2
 from FaceID import who,takeframe
 from Eye_Gaze_Tracking import eyegaze
 from expressions import expression
+from HandGestures import reco
 # from s1.dollarpy import test,traindata
 
 
@@ -68,6 +69,10 @@ def listen(conn):
             d = f'EXPR,{exp}'
             d = bytes(d, 'utf-8')
             conn.send(d)
+        
+        if message == "GESTURE":
+            reco(conn)
+
 
         if message =="FALL":
             print("mewo")
