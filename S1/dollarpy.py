@@ -3,6 +3,7 @@ import struct
 from dollarpy import Recognizer,Template,Point
 import numpy as np
 import mediapipe as mp
+import time
 
 
 def Send_farmes(img_str):
@@ -60,7 +61,7 @@ mp_drawings = mp.solutions.drawing_utils
 mp_holistic = mp.solutions.holistic
 
 
-Temps = []
+
 def get_points(videopath,label):
     cap = cv2.VideoCapture(videopath)
     with mp_holistic.Holistic(min_detection_confidence=0.7,min_tracking_confidence=0.7) as holistic:
@@ -155,6 +156,7 @@ def get_points(videopath,label):
 
 # Fall Backwad
 def traindata():
+    Temps = []
     i = 1
     while i < 3:
         vid = f"Dataset/Fall_Backward/S{i}.avi"
@@ -201,3 +203,21 @@ def traindata():
         tmpl = Template('Fall_sitting',pointt)
         Temps.append(tmpl)
         i+=1
+    return Temps
+
+
+
+
+
+def test(Temps):
+    vidd = "Dataset/Fall_right/S7.avi"
+    pointt = get_points(vidd,"sherif_elo5if")
+    print(pointt)
+    start = time.time()
+    recognizer = Recognizer(Temps)
+    result = recognizer.recognize(pointt)
+    end = time.time()
+    duration = end - start
+    print(result)
+    print(duration)
+    return result

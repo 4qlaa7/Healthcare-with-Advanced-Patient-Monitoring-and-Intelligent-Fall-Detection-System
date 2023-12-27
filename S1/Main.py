@@ -3,7 +3,12 @@ import threading
 import cv2
 from FaceID import who,takeframe
 from Eye_Gaze_Tracking import eyegaze
+from expressions import expression
+import dollarpy
+from dollarpy import test,traindata
 
+
+Temps = traindata()
 mySocket = socket.socket()
 mySocket.bind(('localhost', 4344))
 mySocket.listen(5)
@@ -56,9 +61,22 @@ def listen(conn):
                 #print(d)
                 d = bytes(d, 'utf-8')
                 conn.send(d)
-            print("sss")
+
+        if message == "EXPR":
+            exp = expression()
+            d = f'EXPR,{exp}'
+            d = bytes(d, 'utf-8')
+            conn.send(d)
+
+        if message =="FALL":
+            fall = test(Temps)
+            d = f'FALL,{fall}'
+            d = bytes(d, 'utf-8')
+            conn.send(d)
 
 # Start the connector thread
+            
+
 thread1 = threading.Thread(target=connector)
 thread1.start()
 
