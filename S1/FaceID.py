@@ -4,7 +4,7 @@ import face_recognition
 import os
 
 
-path = 'Persons'  # put the path
+path = 'S1/Persons'  # put the path
 images = []
 classNames = []
 personsList = os.listdir(path)
@@ -34,7 +34,7 @@ print('Encoding Complete.')
 
 def takeframe():
     framect = 0
-    cap = cv2.VideoCapture(1)
+    cap = cv2.VideoCapture(0)
     while cap.isOpened:
         ret, frame = cap.read()
         framect +=1

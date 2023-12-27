@@ -28,10 +28,15 @@ def listen(conn):
     print("Receiving..")
     while True:
         data = conn.recv(1024).decode('utf-8')
+        message = ""
         if not data:
             break
-        _, message = data.split(",",1)
-        print(message)
+        if ',' in data:
+            _, message = data.split(",", 1)
+        else:
+            # Handle the case where there is no comma in the data
+            print("Invalid data format:", data)
+        #print(message)
         if message == "FACEID":
             face = takeframe()
             #face = cv2.imread("face.jpg")
