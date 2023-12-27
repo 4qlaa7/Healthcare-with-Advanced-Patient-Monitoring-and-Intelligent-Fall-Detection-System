@@ -5,6 +5,7 @@ from FaceID import who,takeframe
 from Eye_Gaze_Tracking import eyegaze
 from expressions import expression
 from HandGestures import reco
+import struct
 # from s1.dollarpy import test,traindata
 
 
@@ -20,6 +21,7 @@ def connector():
         print("Device connected:", addr)
         # Temps = traindata()
         threading.Thread(target=listen, args=(conn,)).start()
+        threading.Thread(target=cameraread)
         #threading.Thread(target=send, args=(conn,)).start()
 
 def send(conn):
@@ -30,6 +32,24 @@ def send(conn):
     msg = bytes(file_path, 'utf-8')
     conn.send(msg)
 
+def Send_farmes(img_str):
+        global isok
+        if isok:
+            global conn
+            conn.sendall(struct.pack("Q", len(img_str)))    
+            conn.sendall(img_str)
+
+
+cap = cv2.VideoCapture(0)
+def cameraread():
+    while True:
+        # Read a frame from the camera
+        ret, frame = cap.read()    
+        # Encode the frame as JPEG
+        encode_param = [int(cv2.IMWRITE_JPEG_QUALITY), 90]
+        _, img_encoded = cv2.imencode('.jpg', frame, encode_param)
+        img_str = img_encoded.tobytes()
+        Send_farmes(img_str)
 
 def listen(conn):
     print("Receiving..")
@@ -80,7 +100,7 @@ def listen(conn):
             # d = f'FALL,{fall}'
             # d = bytes(d, 'utf-8')
             # conn.send(d)
-
+    
 # Start the connector thread
             
 
